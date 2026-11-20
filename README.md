@@ -17,3 +17,4 @@ Aplicación orientada a objetos desarrollada en Python sin uso de bases de datos
 ## Ejecución
 ```bash
 python src/main.py
+Estado del proyecto: Validado con 12 simulaciones y archivo de logs activo.
