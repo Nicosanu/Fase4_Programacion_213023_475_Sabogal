@@ -1,0 +1,25 @@
+2026-11-19 20:35:41,891 - INFO - === INICIO DE SIMULACIONES SISTEMA INTEGRAL SOFTWARE FJ ===
+2026-11-19 20:35:41,892 - INFO - Cliente registrado: Cliente [C001]: Carlos Ramírez | Correo: carlos.ramirez@correo.com | Tel: 3104567890
+2026-11-19 20:35:41,893 - INFO - Cliente registrado: Cliente [C002]: Laura Gómez | Correo: laura.gomez@empresa.co | Tel: 3209876543
+2026-11-19 20:35:41,894 - ERROR - [Simulación 3 - Controlada] Error registrando cliente: El nombre del cliente es obligatorio.
+2026-11-19 20:35:41,894 - ERROR - [Simulación 4 - Controlada] Error registrando cliente: Correo electrónico inválido: andres_correo_malo
+2026-11-19 20:35:41,896 - INFO - Servicio registrado: [S001] Sala Ejecutiva Norte - Tarifa: $80000.0/h (Disponible)
+2026-11-19 20:35:41,896 - INFO - Servicio registrado: [S002] Estación WorkStation Pro - Tarifa: $45000.0/h (Disponible)
+2026-11-19 20:35:41,897 - INFO - Servicio registrado: [S003] Consultoría Cloud - Tarifa: $120000.0/h (Disponible)
+2026-11-19 20:35:41,898 - ERROR - [Simulación 8 - Controlada] Error creando servicio: La tarifa base debe ser mayor que cero.
+2026-11-19 20:35:41,899 - INFO - Reserva creada en estado PENDIENTE: ID R001
+2026-11-19 20:35:41,899 - INFO - Reserva R001 CONFIRMADA para Carlos Ramírez | Total: $273105.0
+2026-11-19 20:35:41,899 - INFO - Reserva R001 PROCESADA exitosamente (Sala 'Sala Ejecutiva Norte' con capacidad para 12 personas.).
+2026-11-19 20:35:41,899 - INFO - Auditoría de cierre ejecutada para reserva R001 (bloqueo=False).
+2026-11-19 20:35:41,900 - INFO - Reserva creada en estado PENDIENTE: ID R002
+2026-11-19 20:35:41,900 - ERROR - Fallo al confirmar reserva R002: El servicio 'Sala Ejecutiva Norte' no está disponible.
+2026-11-19 20:35:41,900 - ERROR - [Simulación 10 - Controlada] Excepción encadenada capturada: No se pudo confirmar la reserva R002 | Causa: El servicio 'Sala Ejecutiva Norte' no está disponible.
+2026-11-19 20:35:41,900 - INFO - Reserva creada en estado PENDIENTE: ID R003
+2026-11-19 20:35:41,901 - ERROR - Fallo al confirmar reserva R003: Descuento fuera de rango permitido (0 a 0.99): 1.5
+2026-11-19 20:35:41,901 - ERROR - [Simulación 11 - Controlada] Excepción encadenada capturada: No se pudo confirmar la reserva R003 | Causa: Descuento fuera de rango permitido (0 a 0.99): 1.5
+2026-11-19 20:35:41,901 - INFO - Reserva creada en estado PENDIENTE: ID R004
+2026-11-19 20:35:41,901 - INFO - Reserva R004 CONFIRMADA para Laura Gómez | Total: $571200.0
+2026-11-19 20:35:41,901 - INFO - Reserva R004 CANCELADA correctamente y servicio liberado.
+2026-11-19 20:35:41,902 - ERROR - Fallo al confirmar reserva R004: La reserva R004 está cancelada y no puede confirmarse.
+2026-11-19 20:35:41,902 - ERROR - [Simulación 12 - Controlada] Intento inválido tras cancelación: No se pudo confirmar la reserva R004 | Causa: La reserva R004 está cancelada y no puede confirmarse.
+2026-11-19 20:35:41,902 - INFO - === FIN DE SIMULACIONES | Clientes: 2 | Servicios: 3 | Reservas: 4 ===
